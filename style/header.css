@@ -1,0 +1,55 @@
+/* Header */
+body{
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;    
+    height: 100px;
+}
+
+.header-elm{
+    padding: 5px;
+    margin: auto;
+    font-size: 1rem;
+    text-align: center;
+    width: 25rem;
+}
+
+.logo{
+    width: 10rem;
+}
+
+/* Team name */
+.team-name {
+    font-size: 1.5rem;
+}
+
+/* Navigation Bar */
+.topnav {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.topnav a {
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+    color: rgb(75, 73, 73);
+
+}
+
+/* Delete COSC2083 when the screen is less than 1000px */
+@media screen and (max-width: 1000px) {
+    .title{
+        display: none;
+    }
+
+}
