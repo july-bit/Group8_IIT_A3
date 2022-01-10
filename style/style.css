@@ -86,11 +86,12 @@
         height: auto;
         width: 100wv;
         text-align: center;
+        margin: 0;
     }
 
     .about-wrapper{
         flex-direction: column;   
-        margin: 10px;
+        margin: 0;
     }
     .section-title{
         font-size: 1.5rem;
