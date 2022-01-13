@@ -18,7 +18,8 @@ body{
 }
 
 .logo{
-    width: 10rem;
+    width: 15rem;
+    margin: 1rem;
 }
 
 /* Team name */
@@ -28,7 +29,7 @@ body{
 
 /* Navigation Bar */
 .topnav {
-    border: 1px solid black;
+    border: 1px solid #F4F1DE;
     padding: 20px;
 }
 
@@ -37,13 +38,11 @@ body{
     margin: auto;
     padding: 20px;
     text-decoration: none;
-    color: black;
+    color: #F4F1DE;
 }
 
 .topnav a:hover {
     text-decoration: underline;
-    color: rgb(75, 73, 73);
-
 }
 
 /* Delete COSC2083 when the screen is less than 1000px */

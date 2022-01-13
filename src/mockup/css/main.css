@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+
+:root{
+    background-color: #292F4A;
+    color: #F4F1DE;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 60%;
+    font-family: 'Sora', sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+h2{
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Button */
+.btn {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 32rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #F4F1DE;
+    background: #292F4A;
+    border-radius: 4px;
+    border: 1px solid #F4F1DE;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #292F4A;
+    background: #F4F1DE;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    color: #F4F1DE;
+    background: #292F4A;
+}
+
+#highscore-btn:hover {
+    color: #292F4A;
+    background: #F2CC8F;
+}
+
+.fa-crown {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+/* End Page CSS */
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0 0.5rem 0 #F4F1DE;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.fa-home {
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+/* Light Mode */
+
+.light-mode {
+    background-color: #F4F1DE ;
+    color: #292F4A
+}
+
+.light-mode .btn {
+    color: #292F4A;
+    background: #F4F1DE;
+    border: 1px solid #292F4A;
+}
+
+.light-mode .btn:hover{
+    color: #F4F1DE;
+    background: #292F4A;
+}
+
+.light-mode #highscore-btn {
+    color: #292F4A;
+    background: #F4F1DE;
+}
+
+.light-mode #highscore-btn:hover {
+    color: #292F4A;
+    background: #F2CC8F;
+    border: 1px solid #F2CC8F;
+}
+
+.light-mode .choice-container {
+    color: #292F4A;
+    background: #F4F1DE;
+    border: 1px solid #292F4A;
+
+}
+.light-mode .choice-container:hover{
+    box-shadow: 0 0.4rem 1.4rem 0 #292F4A;
+}
+
+.light-mode #progressBar {
+    border: 0.2rem solid #292F4A;
+}
+
+.light-mode #progressBarFull {
+    background: #292F4A;
+}
+
+.light-mode .correct {
+    background-color: #81B29A;
+    color: #292F4A;
+}
+
+.light-mode .incorrect {
+    background-color: #E07A5F;
+    color: #292F4A;
+}
+
+.light-mode input {
+    box-shadow: 0 0 0.5rem 0 #292F4A;
+}

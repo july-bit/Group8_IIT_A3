@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
 
 :root {
-    background-color: #F4F1DE;
-    color: #292F4A;
+    background-color: #292F4A;
+    color: #F4F1DE;
     font-family: 'Sora', sans-serif;
     margin: 0;
+    border: 1px solid #F4F1DE;
+
 }
 
 .flex-column{
@@ -37,7 +39,7 @@
 /* Team Profile */
 .container{
     height: auto;
-    margin: 0 12rem;
+    margin: 0 10rem;
     padding: 2.5rem;
     font-size: 1rem;
 }
@@ -70,31 +72,65 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    background-color: #F4F1DE;
-    border: 1px solid #292F4A;
+    background-color: #292F4A;
+    border: 1px solid #F4F1DE;
     border-radius: 15px;
     box-shadow: 0 5px #999;
+    color: #F4F1DE;
 }
   
 .btn:hover {
-    background-color: #F2CC8F
+    background-color: #F2CC8F;
+    color: #292F4A;
 }
+
+/* Read more/less */
+.addReadMore.showlesscontent .SecSec,
+.addReadMore.showlesscontent .readLess {
+    display: none;
+}
+
+.addReadMore.showmorecontent .readMore {
+    display: none;
+}
+
+.addReadMore .readMore,
+.addReadMore .readLess {
+    font-weight: bold;
+    color: #F2CC8F;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.addReadMoreWrapTxt.showmorecontent .SecSec,
+.addReadMoreWrapTxt.showmorecontent .readLess {
+    display: block;
+}
+
+#more {display: none;}
 
 /* Change the style if the screen is less than 1300px */
 @media screen and (max-width: 1300px) {
     .container{
         height: auto;
-        width: 100wv;
         text-align: center;
-        margin: 0;
+        padding: 0;
+        font-size: 0.8rem;
     }
 
     .about-wrapper{
         flex-direction: column;   
-        margin: 0;
-    }
-    .section-title{
-        font-size: 1.5rem;
+        margin: 0px;
     }
 
+    .section-title{
+        font-size: 3rem;
+    }
+    
+    .btn {
+        width: 10rem;
+        height: 4rem;
+        font-size: 1rem;
+        margin: 20px 0 0 0;
+    }
 }

@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="print(Name)'s Website" />
     <title>Team Profile</title>
     
     <!-- CSS stylesheets -->
@@ -18,17 +19,17 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <meta name="description" content="print(Name)'s Website" />
-
 </head>
 
 <body>
     <!--Header-->
-    <div id="header"></div>
+    <section id="title">
+        <div id="header"></div>
+    </section>
     <!-- End Header -->
 
     <!-- Team Name -->
-    <section id="team-name">
+    <section id="name">
         <div class="container">
             <h2 class="section-title bold-text">Why print(Name)?</h2>
             <div class="about-wrapper flex-row">
@@ -37,7 +38,7 @@
                 </div>
 
                 <div class="text item">
-                    <p class="info-text">
+                    <p class="info-text addReadMore showlesscontent">
                         print(Name) was chosen as our team’s name as we wanted to embody the ever-popular Python
                         programming language. As an open-source, high-level programming language with extreme
                         versatility in the fields of Data Mining, Data Science, AI (Artificial Intelligence),
@@ -73,8 +74,8 @@
                         current advancements in Artificial Intelligence (AI) and Machine Learning (ML), it is safe to
                         assume that in the near future, AI and automation would come for my bread and butter as a
                         communicator. For instance, Vox (2017) highlighted how automation was used to edit a news video
-                        from scratch (video), or how the rapid development of Natural Language Processing (NLP) enabled
-                        software to “write” virtually coherent bodies of texts (video). Thus, by taking this course, I
+                        from scratch (<a href="https://www.youtube.com/watch?v=IJKjMIU55pE&t=39s" style="color: #F2CC8F;" target="_blank">video</a>), or how the rapid development of Natural Language Processing (NLP) enabled
+                        software to “write” virtually coherent bodies of texts (<a href="https://www.youtube.com/watch?v=gcHkxP9adiM" style="color: #F2CC8F;" target="_blank">video</a>). Thus, by taking this course, I
                         am hoping to get an overview of the IT field as a whole to better inform my decision to change
                         my career path in the future.
                     </p>
@@ -170,7 +171,7 @@
                 </div>
 
                 <div class="text item">
-                    <p class="info-text">
+                    <p class="info-text addReadMore showlesscontent">
                         Our group was not formed until the fourth week. In the beginning there was only Thu and My, then
                         came Vu, and eventually Tri joined the group. Despite our late introduction to each other, and
                         the fact that COVID-19 prevented any offline meeting until week 6, we were able to maintain a
@@ -200,7 +201,7 @@
                 </div>
 
                 <div class="text item">
-                    <p class="info-text">
+                    <p class="info-text addReadMore showlesscontent">
                         Never has the phrase “Our past experiences shape who we are” been more evident when we analyze
                         each member’s career plan. Whereas Thu and My’s love for all-thing-data is reflected through
                         their career choices, namely Senior Data Analyst at Google and Data Engineer at Pops Worldwide
@@ -217,7 +218,7 @@
     <!-- Add JavaScript -->
     <script src="../js/header.js"></script>
     <script src="../js/scroll.js"></script>
-
+    <script src="../js/readmore.js"></script>
 </body>
 
 </html>
